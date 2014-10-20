@@ -91,6 +91,8 @@ public void test3() {
         //! wf.f();
         //! wf.g();
 }
+
+
 }
 /* Output:
 OverridingPrivate2.f()

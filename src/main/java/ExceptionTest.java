@@ -144,4 +144,22 @@ A trivial exception
     }*/
     }
 
+
+
+    ////override method exception
+    class A {
+        public void msg() throws Exception {
+        }
+    }
+    class B extends A {
+        public void msg() {
+            System.out.println("bla-bla");
+        }
+    }
+    @Test
+    public void test5() {
+        new B().msg();
+    }
+
+
 }

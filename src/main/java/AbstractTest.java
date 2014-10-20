@@ -85,4 +85,22 @@ public class AbstractTest {
     * In main( ), demonstrate that it works.
      * Now put the abstract declaration for the method in the base class, thus eliminating the need for the downcast.
     * */
+
+class Parent {
+    public void msg() {
+        System.out.println("method A");
+    }
 }
+class Child extends Parent {
+    @Override
+    public void msg() {
+        System.out.println("method B");
+    }
+}
+    @Test
+    public void test8() {
+        Parent child = new Child();
+        child.msg();
+    }
+
+ }
